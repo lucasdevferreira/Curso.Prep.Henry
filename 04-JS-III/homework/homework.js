@@ -226,12 +226,12 @@ function continueStatement(numero) {
   let aumento = [];
   let suma;
   for (let i = 0; i < 10; i++) {
-    numero = numero + 2;
-    if (numero === 5) {
+    if (i === 5) {
       continue;
+    } else {
+      numero = numero + 2;
+      aumento.push(numero);
     }
-
-    aumento.push(numero);
   }
   return aumento;
 }
